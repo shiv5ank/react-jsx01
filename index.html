@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="root"></div>
+    <script type="text/babel">
+
+        let zappos = <div>
+            <h1 style={{
+                textAlign:"center"
+            }}>About Us</h1>
+            <p style={{
+                textAlign:"center"
+            }}>At Zappos.com, our purpose is simple:to live and deliver WOW.</p>
+            <p style={{
+                textAlign:"center"
+            }}>
+                Twenty years ago, we began as a small online retailer that only sold
+                shoes. Today, we still sell shoes - as well as clothing, handbags,
+                accessoires, and more. That "more" is providing the very best customer
+                service, customer experience, and company culture. We aim to inspire the
+                world by showing it's possible to simultaneously deliver happiness to
+                customers, employees, vendors, shareholders, and the community in a
+                long-term, sustainable way.
+            </p>
+
+            <p style={{
+                textAlign:"center"
+            }}>
+                We hope that in the future people won't even realize we started selling
+                shoes online. Instead, they'll know Zappos as a service company that
+                just happens to sell ______.
+            </p>
+        </div>
+
+        ReactDOM.render(<div> {zappos} </div>, document.getElementById('root'))
+    </script>
+</body>
+
+</html>
